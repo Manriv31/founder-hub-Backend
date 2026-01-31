@@ -7,6 +7,8 @@ from app.core.database import Base, engine
 
 # Importar modelos para registrar metadata (tablas) en Base
 from app.models.user import User  # noqa: F401
+from app.models.company import Company  # noqa: F401
+from app.models.product import Product  # noqa: F401
 
 
 @asynccontextmanager
