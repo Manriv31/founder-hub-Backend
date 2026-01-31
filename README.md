@@ -6,3 +6,32 @@ A través de Founders Hub, los founders pueden publicar sus proyectos, describir
 La plataforma prioriza la simplicidad, la claridad y la conexión temprana, reduciendo la fricción entre la presentación de un proyecto y el primer contacto de inversión.
 
 Este proyecto fue desarrollado como parte de la Hackathon Cursor-SV 2026, con un enfoque en MVP, experiencia de usuario y viabilidad como producto SaaS.
+
+product_model
+______________
+name
+active_users
+selling (True/ false)
+seaking_inversion (True / false)
+publish (true / false)
+price 
+founder (fk)
+is_company (boolean)
+country
+publish_date
+
+User_model
+________
+name
+last_name
+email
+phone
+country
+direction
+inversor (true / false)
+
+company_model
+_________
+name
+description
+founders
