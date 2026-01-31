@@ -33,10 +33,7 @@ Los founders publican proyectos que buscan inversión y los inversionistas puede
 - Usar FastAPI con estructura modular por capas.
 - SQLAlchemy models SOLO en app/models.
 - Pydantic schemas SOLO en app/schemas.
-- Lógica de negocio SOLO en app/services.
-- Endpoints solo llaman services, sin lógica.
-- No usar SQLAlchemy models como response.
-- Usar dependency injection para DB sessions.
+- Lógica fuerte en cada controlador/endpoints
 - Usar tipado estricto y Pydantic v2.
 - No escribir rutas en main.py.
 - API versionada bajo app/api/v1.
@@ -76,7 +73,7 @@ app/
 │   ├── user.py
 │   ├── product.py
 │   └── company.py
-├── services/                   # lógica de negocio
+├── services/                   
 │   ├── user_service.py
 │   ├── product_service.py
 │   └── company_service.py
