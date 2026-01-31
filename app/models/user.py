@@ -18,5 +18,7 @@ class User(Base):
     country: Mapped[str | None] = mapped_column(String(100), nullable=True)
     direction: Mapped[str | None] = mapped_column(String(255), nullable=True)
 
+    password_hash: Mapped[str] = mapped_column(String(255))
+
     inversor: Mapped[bool] = mapped_column(Boolean, default=False)
 
