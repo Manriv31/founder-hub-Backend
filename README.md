@@ -35,3 +35,23 @@ _________
 name
 description
 founders
+
+Folder Structure
+
+app/
+├── main.py
+├── core/
+│   ├── config.py
+│   ├── security.py
+│   └── database.py
+├── api/
+│   ├── __init__.py
+│   └── v1/
+│       ├── __init__.py
+│       ├── router.py
+│       ├── endpoints/
+├── migrations
+├── models/
+├── schemas/
+├── services/ 
+└── __init__.py
